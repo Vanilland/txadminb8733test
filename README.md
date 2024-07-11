@@ -1,6 +1,6 @@
 # txAdmin 
 
-Fivemのtxadmin8733からox_libのコマンドなどのヘルプが表示しなくなった
+Fivemのartifacts 8733からox_libのコマンドなどのヘルプが表示しなくなった
 原因調査や対策の為のプロジェクト
 
 Xがバグが発生しているバージョン
@@ -13,6 +13,9 @@ Xがバグが発生しているバージョン
 8552 O
 8214 O
 ```
+
+tested Linux
+https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 
 # 原因
 
