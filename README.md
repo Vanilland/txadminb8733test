@@ -1,4 +1,30 @@
-# txAdmin 
+# English
+artifacts b8733 and above bug
+
+```
+8883 X
+8859 X
+8823 X
+8733 X
+8695 O
+8552 O
+8214 O
+```
+
+It seems that from fx: b8733, when using TriggerClientEvent to trigger an event on the source client in the server's playerJoining event, it does not execute.
+
+3 different ways to solve this problem.
+
+Use fx: 8695
+
+Set playerId to -1 in TriggerClientEvent in playerJoining, which is sent to all users, but for some reason it works even when there is only one player
+
+Execute addSuggestion in the client-side script
+
+tested Linux
+https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
+
+# Japanese
 
 Fivemのartifacts 8733からox_libのコマンドなどのヘルプが表示しなくなった
 原因調査や対策の為のプロジェクト
@@ -13,9 +39,6 @@ Xがバグが発生しているバージョン
 8552 O
 8214 O
 ```
-
-tested Linux
-https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 
 # 原因
 
