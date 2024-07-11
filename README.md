@@ -1,3 +1,5 @@
+ ![Image](https://github.com/Vanilland/txadminb8733test/blob/main/image.png)
+
 # English
 artifacts b8733 and above bug
 
@@ -70,5 +72,3 @@ TriggerClientEvent('chat:addSuggestions', -1, registeredCommands)
 /ping2はox_libの元の方法で、サーバからsourceを送っている為不具合が発生
 
 /ping3はサーバーから全員に向けて送っている処理
- 
- ![Image](https://github.com/Vanilland/txadminb8733test/blob/main/image.png)
