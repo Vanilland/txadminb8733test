@@ -1,8 +1,5 @@
  ![Image](https://github.com/Vanilland/txadminb8733test/blob/main/image.png)
 
-# English
-artifacts b8733 and above bug
-
 ```
 8883 X
 8859 X
@@ -12,6 +9,9 @@ artifacts b8733 and above bug
 8552 O
 8214 O
 ```
+
+# English
+artifacts b8733 and above bug
 
 It seems that from fx: b8733, when using TriggerClientEvent to trigger an event on the source client in the server's playerJoining event, it does not execute.
 
@@ -30,17 +30,6 @@ https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 
 Fivemのartifacts 8733からox_libのコマンドなどのヘルプが表示しなくなった
 原因調査や対策の為のプロジェクト
-
-Xがバグが発生しているバージョン
-```
-8883 X
-8859 X
-8823 X
-8733 X
-8695 O
-8552 O
-8214 O
-```
 
 # 原因
 
