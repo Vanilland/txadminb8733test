@@ -15,9 +15,12 @@ Xがバグが発生しているバージョン
 ```
 
 # 原因
+
 サーバーのスクリプト内でプレイヤー参加時(playerJoining)
-サーバーのスクリプトから繋いできたクライアントへイベントを送る処理(TriggerClientEvent)にてsourceを指定していると
-エラーは発生せず、処理が行われない
+
+サーバーのスクリプトから繋いできたクライアントへイベントを送る処理(TriggerClientEvent)にて
+
+sourceを指定しているとエラーは発生せず、処理が行われない
 
 # 解決策
 
@@ -37,7 +40,9 @@ TriggerClientEvent('chat:addSuggestions', -1, registeredCommands)
 # テスト
 
 /ping1の処理は上記の2番の方法で、　クライアントで処理
+
 /ping2はox_libの元の方法で、サーバからsourceを送っている為不具合が発生
+
 /ping3はサーバーから全員に向けて送っている処理
  
  ![Image](https://github.com/Vanilland/txadminb8733test/blob/main/image.png)
