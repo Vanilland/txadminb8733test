@@ -15,7 +15,7 @@ artifacts b8733 and above bug
 
 It seems that from fx: b8733, when using TriggerClientEvent to trigger an event on the source client in the server's playerJoining event, it does not execute.
 
-3 different ways to solve this problem.
+## 3 different ways to solve this problem.
 
 Use fx: 8695
 
@@ -23,7 +23,7 @@ Set playerId to -1 in TriggerClientEvent in playerJoining, which is sent to all 
 
 Execute addSuggestion in the client-side script
 
-tested Linux
+## tested Linux
 https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 
 # Japanese
@@ -31,7 +31,7 @@ https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 Fivemのartifacts 8733からox_libのコマンドなどのヘルプが表示しなくなった
 原因調査や対策の為のプロジェクト
 
-# 原因
+## 原因
 
 サーバーのスクリプト内でプレイヤー参加時(playerJoining)
 
@@ -39,7 +39,7 @@ Fivemのartifacts 8733からox_libのコマンドなどのヘルプが表示し�
 
 sourceを指定しているとエラーは発生せず、処理が行われない
 
-# 解決策
+## 解決策
 
 1. サーバーtxAdminバージョンを8695を使う
 
@@ -54,7 +54,7 @@ TriggerClientEvent('chat:addSuggestions', source, registeredCommands)
 TriggerClientEvent('chat:addSuggestions', -1, registeredCommands)
 ```
 
-# テスト
+## テスト
 
 /ping1の処理は上記の2番の方法で、　クライアントで処理
 
